@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Friend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html" target="_parent">HOME</a>
+        <a href="GARBAGE & POLLUTION.html" target="_parent">GARBAGE & POLLUTION</a>
+        <a href="GARBAGE & SOLUTION.html" target="_parent">GARBAGE & SOLUTION</a>
+        <a href="COMMUNITY WORK.html" target="_parent">COMMUNITY WORK</a>
+        <a href="FEEDBACK.html" target="_parent">YOUR FEEDBACK</a>
+    </div>
+    <div class="body">
+        <div class="img">
+
+        </div>
+        <div class="slider">
+            <img src="1.jpg">
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var images = ['1.jpg', '2.jpg', '3.jpg'];
+                var currentSlide = 0;
+                var slider = document.querySelector('.slider img');
+                var totalSlides = images.length;
+    
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    slider.src = images[currentSlide];
+                }
+                setInterval(nextSlide, 3000);
+            });
+        </script>
+    </div>
+    <div class="infor">
+        <div class="vis">
+            <h1 class="visi" > MISION  </h1>
+            <h2> "Empowering People With Knowledge To Build An Informed Society For A Sustainable And ECO-Friendly Tomorrow."</h2>
+        </div>
+        <div class="mis">
+            <h1 class="misi" > VISION </h1>
+            <h2> " Be Human For A Clean Environment "  </h2>
+        </div>
+    </div>
+    <footer>
+        <dl>
+            <dt>
+                <h4>Create & Design By:-</h4>
+            </dt>
+            <dd>
+                <h6> &copy; M.V.S.H.Mathugama</h6>
+            </dd>
+        </dl>
+    </footer>
+
+</body>
+</html>
